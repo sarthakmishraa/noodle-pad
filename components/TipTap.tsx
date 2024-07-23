@@ -22,7 +22,7 @@ export const TipTap = () => {
                 types: ["heading", "paragraph"]
             }),
         ],
-        content: localStorage.getItem("content") === null ? "<p>Start writing in your Noodle Pad...</p>" : localStorage.getItem("content"),
+        content: typeof window !== "undefined" ? localStorage.getItem("content") : "<p>Start writing in your Noodle Pad...</p>",
         onUpdate() {
             localStorage.setItem("content", editor?.getHTML() || "");
         }
