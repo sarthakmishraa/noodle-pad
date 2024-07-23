@@ -1,6 +1,15 @@
+:root {
+  --primary-theme: #343a40;
+  --primary-theme-font: #efe2a3;
+  --secondary-theme: #202429;
+  --secondary-theme-font: #fffefe;
+}
+
 body {
   padding-left: 50px;
   padding-right: 50px;
+  background-color: var(--primary-theme);
+  color: var(--primary-theme-font);
 }
 
 button {
@@ -8,33 +17,31 @@ button {
   font-weight: lighter;
   margin-right: 10px;
   cursor: pointer;
-  border: none;
+  border: 1px solid var(--secondary-theme-font);
   border-radius: 5px;
-  background-color: transparent;
+  color: var(--secondary-theme-font);
+  background-color: var(--secondary-theme);
 }
 
 button:hover {
-  background-color: #fefffe;
+  color: var(--primary-theme-font);
 }
 
 button:active {
-  background-color: lightblue;
+  background-color: var(--primary-theme-font);
+  color: var(--primary-theme);
 }
 
 .Navbar {
   padding: 10px;
-  background-color: #edf2fa;
+  background-color: var(--secondary-theme);
   display: flex;
   justify-content: left;
   align-items: center;
 }
 
-.main {
-  background-color: #fefffe;
-}
-
 .editorArea {
-  border-top: 2px solid lightblue;
+  border-top: 2px solid var(--primary-theme-font);
   height: 720px;
   width: 100%;
   height: 720px;
@@ -44,18 +51,33 @@ button:active {
 
 .editorTools {
   text-align: center;
-  background-color: #edf2fa;
+  background-color: var(--secondary-theme);
   padding: 8px;
   font-weight: bold;
 }
 
 .editorTools button {
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .editorArea .ProseMirror {
   height: 100%;
   outline: none;
+}
+
+.about {
+    text-align: center;
+}
+
+.aboutProfilePic {
+    width: 200px;
+    height: 200px;
+    background-image: url('../public/profile-pic.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: 20px auto; /* Center the circle */
 }
 
 @media screen and (min-width: 1080px) {

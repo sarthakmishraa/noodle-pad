@@ -5,7 +5,7 @@ export default function Home () {
     <>
       <div></div>
       <div className="main">
-        <h2>Noodle Docs</h2>
+        <h2>Noodle Pad</h2>
         <TipTap />
       </div>
       <div></div>

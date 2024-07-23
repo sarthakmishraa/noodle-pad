@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Noodle Pad
 
-## Getting Started
+Noodle Pad is a simple yet powerful text editor built using Next.js with TypeScript. It allows users to create and edit text documents seamlessly, with the added functionality of saving content in the browser's localStorage. This ensures that your work is preserved and ready for you when you return. This project is live on vercel.
 
-First, run the development server:
+## Key Features
+- **Rich Text Editing:** Utilizes the Tiptap npm package to provide a robust and customizable text editing experience.
+- **Autosave:** Automatically saves your work to localStorage, so you never lose your progress.
+- **Seamless Continuation:** Resume your work exactly where you left off, every time you open the editor.
+- **User-Friendly Interface:** Clean and intuitive design for a smooth user experience.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Short Description
+Noodle Pad is a text editor application designed to enhance your writing workflow. Built with Next.js and TypeScript, it features a rich text editor powered by Tiptap and an autosave function using localStorage. Whether you’re drafting a document or jotting down notes, Noodle Pad ensures your content is always safe and accessible.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Snippets
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<h3>Noodle Pad Editor</h3>
+<img src="./media/np1.png" width="600" />
+<h3>Noodle Pad About</h3>
+<img src="./media/np2.png" width="600" />
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Tech Used
+- **Front-end Framework:** Next.js
+- **Programming Language:** TypeScript
+- **Text Editor:** Tiptap npm package
+- **Storage:** localStorage
+- **Deployment:** Vercel
 
-## Learn More
+## How to Use
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository: `git clone https://github.com/sarthakmishraa/noodle-pad.git`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Feel free to clone the repository and explore the project.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contributing
+Contributions are welcome! Please fork the repository and submit a pull request.

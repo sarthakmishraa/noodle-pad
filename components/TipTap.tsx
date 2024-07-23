@@ -22,7 +22,10 @@ export const TipTap = () => {
                 types: ["heading", "paragraph"]
             }),
         ],
-        content: '<p>Start writing in your Noodle Doc...</p>',
+        content: localStorage.getItem("content") === null ? "<p>Start writing in your Noodle Pad...</p>" : localStorage.getItem("content"),
+        onUpdate() {
+            localStorage.setItem("content", editor?.getHTML() || "");
+        }
     });
 
     const setNormal = () => {
